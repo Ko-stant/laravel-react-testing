@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HealthController;
 
@@ -12,3 +13,4 @@ use App\Http\Controllers\HealthController;
 
 // small health check endpoint
 Route::get('/health', HealthController::class);
+Route::apiResource('contacts', ContactController::class);
